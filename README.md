@@ -14,6 +14,7 @@ POST /exchange
 | `user_id` | `int` | id for statistic |
 
 ###Response:
+
 ```
 {
     "id" : int,
@@ -25,7 +26,8 @@ POST /exchange
 GET /stat
 ```
 
-##Response:
+###Response:
+
 ```
 {
     "summary_stat" : [long],
