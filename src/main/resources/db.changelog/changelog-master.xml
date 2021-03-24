@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <property name="now" value="NOW()" dbms="mysql"/>
+
+    <changeSet author="root" id="changelog-1.0" runAlways="false">
+        <createTable tableName="conversions">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="from_currency" type="varchar(5)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount_from_currency" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="to_currency" type="varchar(5)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount_to_currency" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="USD_value" type="double">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
