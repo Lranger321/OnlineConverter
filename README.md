@@ -13,7 +13,7 @@ POST /exchange
 | `to` | `string` | What currency to |
 | `user_id` | `int` | id for statistic |
 
-##Response:
+### Response:
 
 ```
 {
@@ -26,7 +26,7 @@ POST /exchange
 GET /stat
 ```
 
-##Response:
+### Response:
 
 ```
 {
