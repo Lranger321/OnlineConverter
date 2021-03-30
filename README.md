@@ -45,3 +45,14 @@ GET /stat
 | 200 | `OK` |
 | 404 | `NOT FOUND` |
 | 500 | `INTERNAL SERVER ERROR` |
+
+## Run
+
+```
+mvn clean
+
+mvn compile
+
+mvn exec:java -Dexec.mainClass="Main" 
+
+```
